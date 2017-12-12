@@ -16,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Person.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/src/main/java/serializable/Person.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="316">
@@ -27,6 +27,16 @@
                 <element signature="e#851#852#0" expanded="true" />
                 <element signature="e#889#890#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitattributes" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitattributes">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,6 +88,8 @@
         <option value="$PROJECT_DIR$/test/src/main/resources/test.html" />
         <option value="$PROJECT_DIR$/test/src/main/resources/person.txt" />
         <option value="$PROJECT_DIR$/test/src/main/java/serializable/Person.java" />
+        <option value="$PROJECT_DIR$/myprojects/.gitattributes" />
+        <option value="$PROJECT_DIR$/.gitattributes" />
       </list>
     </option>
   </component>
@@ -129,11 +141,6 @@
           <expand>
             <path>
               <item name="myprojects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myprojects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myprojects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myprojects" type="462c0819:PsiDirectoryNode" />
               <item name="myprojects" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -295,12 +302,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513059237001</updated>
-      <workItem from="1513059239867" duration="6546000" />
+      <workItem from="1513059239867" duration="6692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6546000" />
+    <option name="totallyTimeSpent" value="6692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -504,14 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myprojects/.gitattributes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/src/main/resources/person.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -530,6 +529,22 @@
             <element signature="e#851#852#0" expanded="true" />
             <element signature="e#889#890#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myprojects/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
