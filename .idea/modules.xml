@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/es/es.iml" filepath="$PROJECT_DIR$/es/es.iml" />
-      <module fileurl="file://$PROJECT_DIR$/myprojects.iml" filepath="$PROJECT_DIR$/myprojects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mars.iml" filepath="$PROJECT_DIR$/mars.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty/netty.iml" filepath="$PROJECT_DIR$/netty/netty.iml" />
       <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
     </modules>
   </component>
