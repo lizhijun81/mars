@@ -12,5 +12,6 @@
         <module>test</module>
         <module>es</module>
         <module>netty</module>
+        <module>netty3</module>
     </modules>
 </project>

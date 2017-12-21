@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="es" />
         <module name="netty" />
+        <module name="netty3" />
         <module name="test" />
       </profile>
     </annotationProcessing>
@@ -15,7 +16,7 @@
       <module name="es" target="1.5" />
       <module name="mars" target="1.5" />
       <module name="netty" target="1.7" />
-      <module name="nettybook2" target="1.7" />
+      <module name="netty3" target="1.6" />
       <module name="test" target="1.5" />
     </bytecodeTargetLevel>
   </component>
