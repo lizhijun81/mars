@@ -21,9 +21,9 @@ public class FileSocketServer {
             while (true) {
                 Socket socket = serverSocket.accept();
 
-                executorService.submit(new SimpleHandler(socket));
+                executorService.submit(new SimpleHandler(socket));// 使用线程池
 
-//                new Thread(new SimpleHandler(socket)).start();
+//                new Thread(new SimpleHandler(socket)).start();// 启动线程
             }
         } catch (IOException e) {
            e.printStackTrace();

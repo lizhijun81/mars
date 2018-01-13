@@ -8,15 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="es" />
         <module name="netty" />
+        <module name="nio" />
         <module name="test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="es" target="1.5" />
-      <module name="mars" target="1.5" />
-      <module name="netty" target="1.7" />
-      <module name="nettybook2" target="1.7" />
-      <module name="test" target="1.5" />
+      <module name="es" target="1.8" />
+      <module name="mars" target="1.8" />
+      <module name="netty" target="1.8" />
+      <module name="nio" target="1.8" />
+      <module name="test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
