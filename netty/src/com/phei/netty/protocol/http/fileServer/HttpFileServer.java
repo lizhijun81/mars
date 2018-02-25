@@ -55,8 +55,8 @@ public class HttpFileServer {
 				    new HttpResponseEncoder());//响应解码器
 			    ch.pipeline().addLast("http-chunked",
 				    new ChunkedWriteHandler());//目的是支持异步大文件传输（）
-			    ch.pipeline().addLast("fileServerHandler",
-				    new HttpFileServerHandler(url));// 业务逻辑
+//			    ch.pipeline().addLast("fileServerHandler",
+//				    new HttpFileServerHandler(url));// 业务逻辑
 			}
 		    });
 	    ChannelFuture future = b.bind("192.168.1.102", port).sync();

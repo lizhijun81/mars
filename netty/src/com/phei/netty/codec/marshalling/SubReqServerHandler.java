@@ -21,6 +21,7 @@ import io.netty.channel.ChannelHandlerContext;
 
 import com.phei.netty.codec.pojo.SubscribeReq;
 import com.phei.netty.codec.pojo.SubscribeResp;
+import io.netty.channel.ChannelInboundHandlerAdapter;
 
 /**
  * @author lilinfeng
@@ -28,7 +29,7 @@ import com.phei.netty.codec.pojo.SubscribeResp;
  * @version 1.0
  */
 @Sharable
-public class SubReqServerHandler extends ChannelHandlerAdapter {
+public class SubReqServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg)
