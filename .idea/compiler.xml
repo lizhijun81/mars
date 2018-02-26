@@ -13,11 +13,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="es" target="1.8" />
-      <module name="mars" target="1.8" />
-      <module name="netty" target="1.8" />
-      <module name="nio" target="1.8" />
-      <module name="test" target="1.8" />
+      <module name="es" target="1.5" />
+      <module name="mars" target="1.5" />
+      <module name="netty" target="1.7" />
+      <module name="nio" target="1.5" />
+      <module name="test" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
