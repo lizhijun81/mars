@@ -25,20 +25,24 @@ import java.util.logging.Logger;
  * Handles a client-side channel.
  */
 public class SecureChatClientHandler extends SimpleChannelInboundHandler<String> {
-
-    private static final Logger logger = Logger.getLogger(
-            SecureChatClientHandler.class.getName());
-
     @Override
-    public void messageReceived(ChannelHandlerContext ctx, String msg) throws Exception {
-        System.err.println(msg);
+    protected void channelRead0(ChannelHandlerContext ctx, String msg) throws Exception {
+
     }
 
-    @Override
-    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
-        logger.log(
-                Level.WARNING,
-                "Unexpected exception from downstream.", cause);
-        ctx.close();
-    }
+//    private static final Logger logger = Logger.getLogger(
+//            SecureChatClientHandler.class.getName());
+//
+//    @Override
+//    public void messageReceived(ChannelHandlerContext ctx, String msg) throws Exception {
+//        System.err.println(msg);
+//    }
+//
+//    @Override
+//    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+//        logger.log(
+//                Level.WARNING,
+//                "Unexpected exception from downstream.", cause);
+//        ctx.close();
+//    }
 }

@@ -62,10 +62,10 @@ public class Java8 {
                 .forEach(e -> System.out.println("forEach: " + e));
         System.out.println("=====================");
         Stream.of("d2", "b1", "b3", "c", "a2")
-//                .filter(e -> {
-//                    System.out.println("filter:" + e);
-//                    return e.startsWith("a");
-//                })
+                .filter(e -> {
+                    System.out.println("filter:" + e);
+                    return e.startsWith("a");
+                })
                 .map(e -> {
                     System.out.println("map:" + e);
                     return e.toUpperCase();
@@ -94,8 +94,6 @@ public class Java8 {
                 persons
                         .stream()
                         .collect(Collectors.summarizingInt(p -> p.age));
-
-//        ageSummary
 
 
     }

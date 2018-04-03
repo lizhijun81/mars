@@ -12,6 +12,7 @@
         <module>test</module>
         <module>es</module>
         <module>netty</module>
+        <module>netty3</module>
         <module>nio</module>
     </modules>
     <dependencies>

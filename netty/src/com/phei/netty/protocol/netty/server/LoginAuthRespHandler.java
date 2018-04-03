@@ -15,10 +15,7 @@
  */
 package com.phei.netty.protocol.netty.server;
 
-import io.netty.channel.ChannelHandler;
-import io.netty.channel.ChannelHandlerAdapter;
-import io.netty.channel.ChannelHandlerContext;
-import io.netty.channel.ChannelPipeline;
+import io.netty.channel.*;
 
 import java.net.InetSocketAddress;
 import java.util.Map;
@@ -35,7 +32,7 @@ import org.apache.commons.logging.LogFactory;
  * @date 2014年3月15日
  * @version 1.0
  */
-public class LoginAuthRespHandler extends ChannelHandlerAdapter {
+public class LoginAuthRespHandler extends ChannelInboundHandlerAdapter {
 
 	private final static Log LOG = LogFactory.getLog(LoginAuthRespHandler.class);
 
