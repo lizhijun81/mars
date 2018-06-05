@@ -12,7 +12,7 @@ public class NIOServerSocket {
     public static void main(String[] args) throws IOException {
         ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
 
-        Selector selector = Selector.open();
+        Selector selector = Selector.open();// WindowsSelectorImpl
 
         serverSocketChannel.socket().bind(new InetSocketAddress(8080));
         serverSocketChannel.configureBlocking(false);

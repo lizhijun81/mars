@@ -1,5 +1,6 @@
 package java8;
 
+import java.io.InputStream;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
@@ -8,6 +9,8 @@ import java.util.stream.Stream;
 
 public class Java8 {
     public static void main(String[] args) {
+
+
         List<String> stringCollection = new ArrayList<>();
         stringCollection.add("ddd2");
         stringCollection.add("aaa2");
