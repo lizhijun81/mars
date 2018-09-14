@@ -31,7 +31,7 @@ public class TimeServerHandler implements Runnable {
     private Socket socket;
 
     public TimeServerHandler(Socket socket) {
-	this.socket = socket;
+		this.socket = socket;
     }
 
     /*

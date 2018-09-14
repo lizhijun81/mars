@@ -1,4 +1,3 @@
 
-.idea/
-target/
-es.iml
+/es.iml
+/target/
