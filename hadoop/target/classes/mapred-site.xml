@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <!--<property>-->
+        <!--<name>mapreduce.framework.name</name>-->
+        <!--<value>yarn</value>-->
+        <!--<description>-->
+            <!--Let the MapReduce jobs run with the yarn framework.-->
+        <!--</description>-->
+    <!--</property>-->
+
+    <!--<property>-->
+        <!--<name>mapreduce.application.classpath</name>-->
+        <!--<value>/Users/lizhijun/Documents/bigdata/hadoop-3.1.1/etc/hadoop,-->
+               <!--/Users/lizhijun/Documents/bigdata/hadoop-3.1.1/share/hadoop/common/lib/*,-->
+               <!--/Users/lizhijun/Documents/bigdata/hadoop-3.1.1/share/hadoop/common/*,-->
+               <!--/Users/lizhijun/Documents/bigdata/hadoop-3.1.1/share/hadoop/hdfs,-->
+               <!--/Users/lizhijun/Documents/bigdata/hadoop-3.1.1/share/hadoop/hdfs/lib/*,-->
+               <!--/Users/lizhijun/Documents/bigdata/hadoop-3.1.1/share/hadoop/hdfs/*,-->
+               <!--/Users/lizhijun/Documents/bigdata/hadoop-3.1.1/share/hadoop/mapreduce/lib/*,-->
+               <!--/Users/lizhijun/Documents/bigdata/hadoop-3.1.1/share/hadoop/mapreduce/*,-->
+               <!--/Users/lizhijun/Documents/bigdata/hadoop-3.1.1/share/hadoop/yarn,-->
+               <!--/Users/lizhijun/Documents/bigdata/hadoop-3.1.1/share/hadoop/yarn/lib/*,-->
+               <!--/Users/lizhijun/Documents/bigdata/hadoop-3.1.1/share/hadoop/yarn/*-->
+        <!--</value>-->
+    <!--</property>-->
+</configuration>

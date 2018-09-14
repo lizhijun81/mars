@@ -2,11 +2,19 @@ package test;
 
 
 import java.net.*;
+import java.util.Date;
 import java.util.Enumeration;
 
 public class Test {
 
     public static void main(String[] args) throws UnknownHostException, SocketException {
+
+        double a = 1.01;
+        double b = 1.02;
+
+
+        Date date = new Date();
+        System.out.println(String.format("%tF %tT", date, date));
 
 //        InetAddress localHost = InetAddress.getLocalHost();
 //        System.out.println(localHost);

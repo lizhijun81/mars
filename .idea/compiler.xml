@@ -6,10 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hadoop" />
+        <module name="hive" />
         <module name="netty" />
         <module name="netty3" />
         <module name="nio" />
         <module name="test" />
+        <module name="utils" />
       </profile>
       <profile name="Annotation profile for mars" enabled="true">
         <sourceOutputDir name="../../../target/generated-sources/annotations" />
@@ -20,11 +23,14 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="es" target="1.5" />
+      <module name="hadoop" target="1.8" />
+      <module name="hive" target="1.8" />
       <module name="mars" target="1.5" />
       <module name="netty" target="1.7" />
       <module name="netty3" target="1.6" />
       <module name="nio" target="1.5" />
       <module name="test" target="1.8" />
+      <module name="utils" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

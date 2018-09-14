@@ -14,6 +14,9 @@
         <module>netty</module>
         <module>netty3</module>
         <module>nio</module>
+        <module>utils</module>
+        <module>hadoop</module>
+        <module>hive</module>
     </modules>
     <dependencies>
         <dependency>
