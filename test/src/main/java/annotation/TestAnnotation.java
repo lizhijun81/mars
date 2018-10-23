@@ -3,6 +3,12 @@ package annotation;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 
+/**
+ * todo: 父类的注解能否被子类继承？？？
+ *    当 注解 @Inherited 为 可继承的，则。。。。。
+ *    当 注解无 @Inherited 为不可继承，则。。。。。
+ */
+
 @MyAnnotation(name = "class")
 public class TestAnnotation {
 
