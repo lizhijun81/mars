@@ -11,6 +11,9 @@ import java.util.function.Consumer;
 public class LambdaDemo {
     public static void main(String[] args) {
 
+
+        Formula[] formulas = new Formula[12];
+
         //================================= lambda ===============================================
         GreetingService greetingService = (message) -> {
             System.out.println("start...");
@@ -40,8 +43,6 @@ public class LambdaDemo {
         // 特定对象的方法引用
         final Car finalCar = car;
         carList.forEach(finalCar::follow);// 等价于 (car1 -> finalCar.follow(car1))
-
-
     }
 }
 
