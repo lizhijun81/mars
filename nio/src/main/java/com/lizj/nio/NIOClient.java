@@ -61,8 +61,6 @@ public class NIOClient {
                     client.register(selector, SelectionKey.OP_READ);
                 } else if (selectionKey.isReadable()) {
                     client = (SocketChannel) selectionKey.channel();
-                    //将缓冲区清空以备下次读取
-                    receivebuffer.clear();
                     //读取服务器发送来的数据到缓冲区中
                     count=client.read(receivebuffer);
                     if(count>0){
