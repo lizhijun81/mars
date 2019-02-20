@@ -9,25 +9,6 @@ import java.util.concurrent.atomic.AtomicIntegerArray;
 
 public class ReflectionTest {
     public static void main(String[] args) throws IllegalAccessException, InstantiationException, NoSuchFieldException {
-//        try {
-////            Method declaredMethod = MyClassLoad.class.getDeclaredMethod("");
-////
-//////            declaredMethod.i
-////
-////            Field field = MyClassLoad.class.getField("");
-////            field.get()
-//
-//
-//        } catch (NoSuchMethodException e) {
-//            e.printStackTrace();
-//        } catch (NoSuchFieldException e) {
-//            e.printStackTrace();
-//        }
-
-//        Unsafe unsafe = Unsafe.getUnsafe();
-//        System.out.println(unsafe);
-//
-//
 
 //        AtomicIntegerArray atomicIntegerArray = new AtomicIntegerArray(new int[]{1,2,3,4,5});
 //        atomicIntegerArray.incrementAndGet(1);
