@@ -1,4 +1,5 @@
 /.gitiattributes
 /mars.iml
 /.idea/
-.idea/workspace.xml
+.idea
+/target

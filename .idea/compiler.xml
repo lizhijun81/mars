@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="es" />
         <module name="hadoop" />
         <module name="hive" />
         <module name="netty" />
@@ -14,12 +15,6 @@
         <module name="spring" />
         <module name="test" />
         <module name="utils" />
-      </profile>
-      <profile name="Annotation profile for mars" enabled="true">
-        <sourceOutputDir name="../../../target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../../target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="es" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
