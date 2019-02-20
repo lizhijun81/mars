@@ -1,4 +1,14 @@
-/.gitiattributes
-/mars.iml
-.idea/
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
 
+### build ###
+/target
+
+
+/target/
+/bin/
+/.*
+!.gitlab-ci.yml

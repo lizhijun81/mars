@@ -14,13 +14,10 @@
         <module>netty</module>
         <module>netty3</module>
         <module>nio</module>
-<<<<<<< HEAD
         <module>spring</module>
-=======
         <module>utils</module>
         <module>hadoop</module>
         <module>hive</module>
->>>>>>> 2ab2e7c56ed8fbe9577866a53d47d20aee1e8034
     </modules>
     <dependencies>
         <dependency>
