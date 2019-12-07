@@ -9,6 +9,8 @@
         <module name="es" />
         <module name="hadoop" />
         <module name="hive" />
+        <module name="leetcode" />
+        <module name="mybatis" />
         <module name="netty" />
         <module name="netty3" />
         <module name="nio" />

@@ -18,6 +18,7 @@
         <module>utils</module>
         <module>hadoop</module>
         <module>hive</module>
+        <module>leetcode</module>
     </modules>
     <dependencies>
         <dependency>
