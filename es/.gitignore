@@ -1,3 +1,6 @@
 
 /es.iml
-/target/
+/.gitiattributes
+/.idea/
+.idea
+/target
