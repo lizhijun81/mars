@@ -1,5 +1,7 @@
 package java8;
 
+import com.google.common.collect.Lists;
+
 import java.io.InputStream;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -9,7 +11,6 @@ import java.util.stream.Stream;
 
 public class Java8 {
     public static void main(String[] args) {
-
 
         List<String> stringCollection = new ArrayList<>();
         stringCollection.add("ddd2");
@@ -98,7 +99,12 @@ public class Java8 {
                         .stream()
                         .collect(Collectors.summarizingInt(p -> p.age));
 
+        System.out.println("=========================");
 
+        // flatMap  将 多个 stream 合并成一个 stream
+        List<String> strs = Lists.newArrayList("1,2,3,4", "7,9,0");
+        List<String> collect = strs.stream().map(e -> e.split(",")).flatMap(Arrays::stream).filter(e -> Integer.parseInt(e) > 0).collect(Collectors.toList());
+        System.out.println(collect);
     }
 }
 

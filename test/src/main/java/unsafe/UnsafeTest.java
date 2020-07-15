@@ -1,14 +1,13 @@
 package unsafe;
 
 import sun.misc.Unsafe;
-
 import java.lang.reflect.Field;
 
 public class UnsafeTest {
     public static void main(String[] args) throws IllegalAccessException, InstantiationException, NoSuchFieldException {
 
-//        AtomicIntegerArray atomicIntegerArray = new AtomicIntegerArray(new int[]{1,2,3,4,5});
-//        atomicIntegerArray.incrementAndGet(1);
+        AtomicIntegerArray atomicIntegerArray = new AtomicIntegerArray(new int[]{1,2,3,4,5});
+        atomicIntegerArray.incrementAndGet(1);
 
         Field theUnsafe = Unsafe.class.getDeclaredField("theUnsafe");
         theUnsafe.setAccessible(true);
