@@ -19,6 +19,7 @@
         <module>hadoop</module>
         <module>hive</module>
         <module>leetcode</module>
+        <module>mockito</module>
     </modules>
     <dependencies>
         <dependency>
