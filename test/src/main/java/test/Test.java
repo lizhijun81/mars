@@ -13,6 +13,13 @@ public class Test {
         double b = 1.02;
 
 
+        Integer aa = null;
+        Integer bb = Integer.valueOf(1);
+        if (bb >= aa) {
+            System.out.println("ertyuio");
+        }
+
+
         Date date = new Date();
         System.out.println(String.format("%tF %tT", date, date));
 
