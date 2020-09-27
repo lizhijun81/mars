@@ -63,9 +63,9 @@ import java.util.Map;
  *      1 层，只需 1 次 ；
  */
 public class SuperEggDrop {
-    Map<Integer, Integer> dp = new HashMap<>();
+    Map<String, Integer> dp = new HashMap<>();
 
-    public int superEggDrop(String I, int K, int N) {// 第I层怎么选择，二分的方式，十分的方式？ 不确定，只能按层实验
+    public int superEggDrop_1(String I, int K, int N) {// 第I层怎么选择，二分的方式，十分的方式？ 不确定，只能按层实验
         if (K == 1) {
             return N;
         }
@@ -80,8 +80,8 @@ public class SuperEggDrop {
 
         int min = Integer.MAX_VALUE;
         for (int i = 1; i <= N; i++) {//  从i层开始扔
-            int c1 = superEggDrop(I +"_" + i,K - 1, i - 1);
-            int c2 = superEggDrop(I +"_" + i, K,N - i);
+            int c1 = superEggDrop_1(I +"_" + i,K - 1, i - 1);
+            int c2 = superEggDrop_1(I +"_" + i, K,N - i);
             int c = Math.max(c1, c2) + 1;
             if (c < min) {
                 min = c;
@@ -94,15 +94,33 @@ public class SuperEggDrop {
         return min == Integer.MAX_VALUE ? 0 : min;
     }
 
-//    private int check(int k,int s,int e) {
-//        for (int i = s; i <= e; i++) {//  从i层开始扔
-//            min = Math.min(min, Math.max(check(K - 1,1,i - 1), check(K,i + 1, N)) + 1);
-//        }
-//    }
+    private int superEggDrop(int K, int N) {
+        if (K == 1) {
+            return N;
+        }
+
+        if (N == 0) {
+            return 0;
+        }
+
+        if (dp.get(N+ "_" + K) != null) {
+            return dp.get(N+ "_" + K);
+        }
+
+        int min = Integer.MAX_VALUE;
+        for (int i = 1; i <= N; i++) {//  从i层开始扔
+            min = Math.min(min, Math.max(superEggDrop(K - 1, i - 1), superEggDrop( K,N - i)) + 1);
+        }
+
+        dp.put(N+ "_" + K, min);
+
+        return min == Integer.MAX_VALUE ? 0 : min;
+    }
 
     public static void main(String[] args) {
         SuperEggDrop superEggDrop = new SuperEggDrop();
-        System.out.println(superEggDrop.superEggDrop("-1",3, 15));
+//        System.out.println(superEggDrop.superEggDrop_1("-1",3, 15));
+        System.out.println(superEggDrop.superEggDrop(3, 15));
 //        System.out.println();
     }
 }

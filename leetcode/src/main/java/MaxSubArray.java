@@ -13,6 +13,10 @@
 // Related Topics 数组 分治算法 动态规划
 
 
+/**
+ * 状态表示：dp[n] 表示前n个元素的最大和
+ * 状态转移：dp[n] = max{dp[n-1] + n, arr[n]}, dp[0] = arr[0];
+ */
 public class MaxSubArray {
     public int maxSubArray(int[] nums) {
         if (nums.length == 1) {
