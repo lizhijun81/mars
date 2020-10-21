@@ -20,6 +20,7 @@
         <module>hive</module>
         <module>leetcode</module>
         <module>mockito</module>
+        <module>mybatis</module>
     </modules>
     <dependencies>
         <dependency>
