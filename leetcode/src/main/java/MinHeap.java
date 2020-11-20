@@ -59,22 +59,6 @@ public class MinHeap {
         return result;
     }
 
-    public boolean offer_poll(int e) {
-        if (size < this.items.length - 1) {// 小于等于数组长度，则直接添加到数组
-            this.offer(e);
-            return true;
-        }
-
-        int result = this.items[0];// 大于数组长度
-        if (result >= e) {// 如果堆顶的元素大于添加的元素，则直接返回；否则将堆顶的元素替换成插入的元素后，对插入的元素下沉
-            return false;
-        }
-
-        this.items[0] = e;
-        down(0);
-        return true;
-    }
-
     private void down(int index) {
         if (size < 0) {
             return;
@@ -106,6 +90,22 @@ public class MinHeap {
         down(lcIndex);
     }
 
+    public boolean offer_poll(int e) {
+        if (size < this.items.length - 1) {// 小于等于数组长度，则直接添加到数组
+            this.offer(e);
+            return true;
+        }
+
+        int result = this.items[0];// 大于数组长度
+        if (result >= e) {// 如果堆顶的元素大于添加的元素，则直接返回；否则将堆顶的元素替换成插入的元素后，对插入的元素下沉
+            return false;
+        }
+
+        this.items[0] = e;
+        down(0);
+        return true;
+    }
+
     public int[] getItems() {
         return items;
     }
@@ -113,7 +113,7 @@ public class MinHeap {
     public static void main(String[] args) {
         MinHeap heap = new MinHeap(10);
 
-        int offers_length = 20;
+        int offers_length = 10;
 
         Random random = new Random();
         int[] offers = new int[offers_length];
@@ -127,8 +127,8 @@ public class MinHeap {
         }
         System.out.println(Arrays.toString(heap.getItems()));
 
-        Arrays.sort(offers);
-        System.out.println(Arrays.toString(offers));
+//        Arrays.sort(offers);
+//        System.out.println(Arrays.toString(offers));
 //
 //        for (int i = 0; i < offers.length; i++) {
 //            System.out.println(heap.poll());

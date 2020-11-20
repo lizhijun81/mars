@@ -83,7 +83,7 @@ class JdkProxyMode implements ProxyMode, InvocationHandler {
 }
 
 /**
- * cglib 的方式 实现动态代理
+ * spring.cglib 的方式 实现动态代理
  */
 class CGLIBProxyMode implements ProxyMode, MethodInterceptor {
     private Object target;

@@ -1,4 +1,4 @@
-package cglib;
+package spring.cglib;
 
 import net.sf.cglib.beans.BeanCopier;
 

@@ -46,6 +46,8 @@ public class MinWindow {
             } else {
                 return "";
             }
+            // a 1 b 2 c 3 d 4    = bc
+            //
         }
 
         if (x_r - x_l > i_r - i_l) {
