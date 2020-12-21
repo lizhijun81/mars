@@ -1,5 +1,7 @@
 package jvm.bootstrap.load;
 
+import java.util.ServiceLoader;
+
 public class Main {
     /**
      * 加载  验证  准备  解析  初始化  使用  卸载
@@ -19,5 +21,14 @@ public class Main {
         String pStaticFinalField = Parent.P_STATIC_FINAL_FIELD;
         System.out.println(pStaticFinalField);
         TestFinalField.test();
+
+        String str = "str";
+        System.out.println(str.getClass().getClassLoader());
+        System.out.println(ServiceLoader.class.getClassLoader());
+        System.out.println(Thread.class.getClassLoader());
+
+        System.out.println(Thread.currentThread().getContextClassLoader());
+        System.out.println(Main.class.getClassLoader());
+        System.out.println(ClassLoader.getSystemClassLoader());
     }
 }

@@ -2,7 +2,7 @@ package spring;
 
 import java.util.concurrent.TimeUnit;
 
-public class Person {
+public class Person implements Man{
 
     public void speak() throws Exception {
         System.out.println("I am person ...");
