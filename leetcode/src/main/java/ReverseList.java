@@ -13,6 +13,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("all")
 public class ReverseList {
     public ListNode reverseList(ListNode head) {
         if (head == null) {
@@ -53,5 +54,51 @@ public class ReverseList {
         c.next = head;
 
         return h;
+    }
+
+    public static ListNode reverseList_2(ListNode head) {
+        if (head == null) {
+            return null;
+        }
+
+        if (head.next == null) {
+            return head;
+        }
+
+        ListNode h = null;
+
+        while (head != null) {
+
+            ListNode hTemp = head.next;
+
+            head.next = null;
+
+            if (h == null) {
+                h = head;
+            } else {
+                head.next = h;
+                h = head;
+            }
+            head = hTemp;
+        }
+
+        return h;
+    }
+
+    public static void main(String[] args) {
+        ListNode n1 = new ListNode(1);
+        ListNode n2 = new ListNode(2);
+        ListNode n3 = new ListNode(3);
+        ListNode n4 = new ListNode(4);
+
+        n1.next = n2;
+        n2.next = n3;
+        n3.next = n4;
+
+        ListNode h = reverseList_2(n1);
+        while (h != null) {
+            System.out.println(h);
+            h = h.next;
+        }
     }
 }

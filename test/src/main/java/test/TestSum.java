@@ -40,6 +40,14 @@ public class TestSum {
     public static void main(String[] args) {
         TestSum testSum = new TestSum();
         testSum.sum();
+
+
+        Integer a = 1000;
+        int b = 1000;
+        System.out.println(a == b);
+
+        Integer c = 1000;
+        System.out.println(a == c);
     }
 
 }
