@@ -22,7 +22,7 @@ import java.lang.ref.WeakReference;
  *
  * PhantomReference 虚幻引用PhantomReference
  * 回收条件：当对象只有虚引用指向它时（即不影响对象生命周期）
- * 使用场景：结合ReferenceQueue追踪对象是否已经被回收
+ * 使用场景：结合ReferenceQueue追踪对象是否已经被回收；Java 直接内存中，用于管理JVM外的内存区域
  *
  * WeakReference 和 PhantomReference 的区别：
  *      WeakReference 可以通过获取到原对象的引用，但是PhantomReference获取不到，其内部直接重写get方法返回null；
