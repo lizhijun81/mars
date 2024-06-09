@@ -11,5 +11,8 @@
 
     <artifactId>leetcode</artifactId>
 
+    <dependencies>
+
+    </dependencies>
 
 </project>
